@@ -1,4 +1,6 @@
 import image from '../mic.jpg'
+import image2 from '../mic2.jpg'
+
 
 export const cardcontent = [
     {
@@ -26,3 +28,30 @@ export const cardcontent = [
         pic: image,
     },
 ]
+
+export const discovercont = [
+    {
+        name: 'Happy vibes',
+        pic: image2,
+    },
+    {
+        name: 'Sad Songs',
+        pic: image2,
+    },
+    {
+        name: 'Party Mix',
+        pic: image2,
+    },
+    {
+        name: 'Chill Out',
+        pic: image2,
+    },
+    {
+        name: 'Exclusive Podcast',
+        pic: image2,
+    },
+    // {
+    //     name: 'On Repeat',
+    //     pic: image2,
+    // },
+]   

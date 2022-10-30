@@ -10,4 +10,5 @@ export const font = {
     two: '17px',
     three: '15px',
     four: '3.5rem',
+    five: '2.5rem'
 }

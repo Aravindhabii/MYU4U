@@ -6,7 +6,6 @@ import Rightsearch from '../../containers/search/Rightsearch'
 const Search = () => {
   return (
     <SearchContainer>
-      <Left /> 
       <Rightsearch />
     </SearchContainer>
   )

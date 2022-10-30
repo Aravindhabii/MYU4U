@@ -4,20 +4,44 @@ import image from "../../assets/image3.jpg";
 
 export const Rightcontainer = styled.div`
   position: relative;
-  height: 100vh;
+  height: auto;
   width: 85%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 `;
 
 export const Wrapper = styled.div`
   position: relative;
   width: 90%;
+  margin-bottom: 5vh;
   /* background: red; */
-  margin-top: 5rem;
 `;
+export const Heading = styled.div`
+  position: relative;
+  width: 100%;
+  height: 7vh;
+  font-size: ${font.one};
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  .setting{
+    margin-left: 2%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: ${color.three};
+    color: ${color.one};
+    border-radius: 30px;
+    padding: 0 20px;
+    text-transform: uppercase;
+  }
+`
+
 export const Postercontainer = styled.div.attrs({
   className: "poster",
 })`
@@ -33,6 +57,9 @@ export const Postercontainer = styled.div.attrs({
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  -webkit-box-shadow: 16px 19px 10px -8px rgba(0,0,0,0.27);
+-moz-box-shadow: 16px 19px 10px -8px rgba(0,0,0,0.27);
+box-shadow: 16px 19px 10px -8px rgba(0,0,0,0.27);
 
   .left {
     position: relative;
@@ -139,7 +166,7 @@ export const Button2 = styled.a`
 export const Cardcontainer = styled.div`
   position: relative;
   width: 100%;
-  height: 50vh;
+  height: 45vh;
   /* background: ${color.four}; */
   display: flex;
   flex-direction: column;
@@ -170,6 +197,9 @@ export const Card = styled.div`
     align-items: center;
     justify-content: flex-start;
     overflow: hidden;
+    -webkit-box-shadow: 16px 17px 12px -9px rgb(0 0 0 / 55%);
+-moz-box-shadow:  16px 17px 12px -9px rgb(0 0 0 / 55%);
+box-shadow:  16px 17px 12px -9px rgb(0 0 0 / 55%);
     p{
 
     }
@@ -179,4 +209,73 @@ export const Card = styled.div`
       width: 40%;
       margin-right: 20px;
     }
+`
+
+export const DiscoverContainer = styled.div`
+  position: relative;
+  width: 100%;
+  height: 35vh;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-evenly;
+  overflow-x: scroll;
+  ::-webkit-scrollbar{
+    display: none;
+  }
+`
+
+export const DiscoverCard = styled.div`
+  position: relative;
+  height: 85%;
+  width: 17%;
+  border-radius: 20px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  transition:all 0.5s ease-in;
+  cursor: pointer;
+
+
+  img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  .carddiv {
+    position: relative;
+    height: 40%;
+    width: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-wrap: break-word;
+    flex-direction: column;
+  }
+  .playbtn{
+    position: relative;
+    font-size: ${font.five};
+    color: ${color.one};
+    margin-top: 1rem;
+    background: green;
+    border-radius: 50%;
+  }
+  path:nth-child(1){
+    background: ${color.three};
+    color: green;
+    overflow: hidden;
+  }
+  &:hover .carddiv{
+    height: 100%;
+    cursor: pointer;
+    transition:all 0.5s ease-in;
+    font-size: ${font.five};
+  }
+  &:hover .playbtn{
+    font-size: ${font.four};
+    transition:all 0.5s ease-in;
+  }
 `

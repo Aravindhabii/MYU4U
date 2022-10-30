@@ -15,7 +15,7 @@ function App() {
           <Left />
           <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/register" element={<Search />} />
+                <Route path="/search" element={<Search />} />
                 <Route path="/login" element={<Search />} />
                 <Route path="*" element={<div>404</div>} />
           </Routes>

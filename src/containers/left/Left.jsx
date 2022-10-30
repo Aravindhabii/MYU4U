@@ -114,7 +114,7 @@ const Left = () => {
             <span className="icon">
               <HomeOutlined />
             </span>
-            view Playlist
+            View Playlist
           </Head1>
         </Link>
       </Sidebarcont>
