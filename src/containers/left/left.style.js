@@ -49,6 +49,7 @@ export const Sidebarcont = styled.div.attrs({
     justify-content: center;
     transition:all 0.1s ease-in-out;
     text-decoration: none;
+    color: ${color.two};
   }
   .content:before {
     content: "";
@@ -109,6 +110,7 @@ export const Sidebarcont = styled.div.attrs({
 export const Head1 = styled.h1`
     font-size: ${font.two};
     font-family: 'Roboto', sans-serif;
+    pointer-events: none;
     .icon{
         font-size: 18px;
         margin-right: 8px;

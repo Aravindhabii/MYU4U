@@ -1,9 +1,10 @@
-export const color = {
-    one: '#F3F3FF',
-    two: '#fff',
-    three: 'rgb(25,25,25)',
-    four: '#000'
-}
+// export const color = {
+//     one: '#1E1F23',
+//     two: '#fff',
+//     three: '#010108',
+//     four: '#000',
+//     five: '#8061DB'
+// }
 
 export const font = {
     one: '1.5rem',
@@ -11,4 +12,12 @@ export const font = {
     three: '15px',
     four: '3.5rem',
     five: '2.5rem'
+}
+
+export const color = {
+    one: '#1B1F24',
+    two: '#fff',
+    three: '#0E1013',
+    four: '#000',
+    five: '#8061DB'
 }

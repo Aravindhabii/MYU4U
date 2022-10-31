@@ -9,7 +9,7 @@ export const Rightcontainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow-y: scroll;
+  overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 `;
 
@@ -35,7 +35,7 @@ export const Heading = styled.div`
     align-items: center;
     justify-content: space-between;
     background: ${color.three};
-    color: ${color.one};
+    color: ${color.two};
     border-radius: 30px;
     padding: 0 20px;
     text-transform: uppercase;
@@ -106,7 +106,7 @@ export const Head2 = styled.h1`
 export const Head3 = styled.h1`
   font-size: ${font.one};
   font-family: "Roboto", sans-serif;
-  color: ${color.three};
+  color: ${color.two};
   font-weight: 900;
 `;
 
@@ -129,7 +129,7 @@ const puleanimation = keyframes`
 
 export const Button = styled.a`
   text-decoration: none;
-  background: ${color.one};
+  background: ${color.two};
   color: ${color.three};
   font-size: ${font.two};
   font-family: "Roboto", sans-serif;
@@ -182,7 +182,6 @@ export const Cardcontainer = styled.div`
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-
   }
 `;
 
@@ -195,6 +194,7 @@ export const Card = styled.div`
     border-radius: 20px;
     display: flex;
     align-items: center;
+    font-family: 'Roboto', sans-serif;
     justify-content: flex-start;
     overflow: hidden;
     -webkit-box-shadow: 16px 17px 12px -9px rgb(0 0 0 / 55%);
@@ -216,12 +216,20 @@ export const DiscoverContainer = styled.div`
   width: 100%;
   height: 35vh;
   display: flex;
-  /* flex-direction: column; */
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: space-evenly;
-  overflow-x: scroll;
+  
   ::-webkit-scrollbar{
     display: none;
+  }
+  .bottom{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+  justify-content: space-evenly;
   }
 `
 

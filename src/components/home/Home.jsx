@@ -12,7 +12,7 @@ const Home = () => {
         <Head />
         <Poster />
         <Cards title="Good Morning" />
-        <Discover />
+        <Discover title = "Trending"/>
       </Wrapper>
     </Rightcontainer>
   );

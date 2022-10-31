@@ -1,6 +1,6 @@
 import React from 'react'
 import { Heading ,Head1} from './right.style'
-import {SettingOutlined,BellOutlined } from '@ant-design/icons'
+import {SettingOutlined,BellOutlined,UserOutlined } from '@ant-design/icons'
 
 
 const Head = () => {
@@ -8,7 +8,7 @@ const Head = () => {
     <Heading>
         <BellOutlined className='setting'/>
         <span  className='setting'>
-            <SettingOutlined/>
+            <UserOutlined/>
             <Head1 style={{marginLeft:'10px'}}>User</Head1>
         </span>
 

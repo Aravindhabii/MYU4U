@@ -1,13 +1,15 @@
 import React from "react";
-import { DiscoverContainer, DiscoverCard, Head1, Head2 } from "./right.style";
+import { DiscoverContainer, DiscoverCard, Head1, Head3 } from "./right.style";
 import mic from "../../assets/mic2.jpg";
 import { discovercont } from "../../assets/resource/contents";
 import { PlayCircleOutlined } from "@ant-design/icons";
 
 
-const Discover = () => {
+const Discover = (props) => {
   return (
     <DiscoverContainer>
+      <Head3>{props.title}</Head3>
+      <div className="bottom">
       {discovercont.map((cont) => {
         return (
           <DiscoverCard>
@@ -20,6 +22,7 @@ const Discover = () => {
           </DiscoverCard>
         );
       })}
+      </div>
     </DiscoverContainer>
   );
 };

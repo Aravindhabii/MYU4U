@@ -3,6 +3,7 @@ import { color, font } from "../../utilities";
 
 export const Search = styled.div`
     position: relative;
+    margin-top: 5%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -30,10 +31,12 @@ export const Search = styled.div`
         position: relative;
         height: auto;
         width: 40%;
+        margin-top: 5px;
         display: flex;
         flex-direction: column;
         align-items: center;
-
+        border-radius: 1.5rem;
+        overflow: hidden;
     }
 `
 
@@ -45,24 +48,43 @@ export const Input = styled.input`
     border: none;
     outline: none;
     background: ${color.three};
-    color: ${color.one};
-    padding: 0 1.5rem 0 3.3rem;
+    color: ${color.two};
+    padding: 0 1.5rem 0 12%;
     border-radius: 3rem;
     font-family: 'Oxygen',sans-serif;
 `
 
 export const Blocks = styled.div`
     position: relative;
-    width: 80%;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 1.5rem;
+    justify-content: flex-start;
+    height: 2rem;
+    padding: 0 12%;
     background: ${color.three};
-    color: ${color.one};
-    margin-bottom: 1px;
+    color: ${color.two};
+    font-family: 'Oxygen', sans-serif;
+    /* margin-bottom: 1px; */
 `
 
 export const RecentSearch = styled.div`
 
 `
+
+export const Browsercont = styled.div`
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    background: #000;
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .bottom{
+        position: relative;
+        display: grid;
+        width: 100%;
+    }
+`
+
