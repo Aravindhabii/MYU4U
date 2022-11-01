@@ -6,7 +6,6 @@ const Search = () => {
   return (
     <>
       <Rightsearch />
-      
     </>
   )
 }

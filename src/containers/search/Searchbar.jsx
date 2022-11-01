@@ -51,24 +51,24 @@ const Searchbar = () => {
 
   return (
     <Search>
-          <span>
-            <SearchOutlined className="inputicon" />
-            <Input
-              type="text"
-              placeholder="Search"
-              onChange={inputHandler}
-              value={searchInput}
-            />
-          </span>
-          <div className="result">
-            {filteredData.slice(0, 5).map((list) => {
-              if (searchInput !== "") {
-                return <Blocks>{list.name}</Blocks>;
-              }
-            })}
-          </div>
-        </Search>
-  )
-}
+      <span>
+        <SearchOutlined className="inputicon" />
+        <Input
+          type="text"
+          placeholder="Search"
+          onChange={inputHandler}
+          value={searchInput}
+        />
+      </span>
+      <div className="result">
+        {filteredData.slice(0, 5).map((list) => {
+          if (searchInput !== "") {
+            return <Blocks>{list.name}</Blocks>;
+          }
+        })}
+      </div>
+    </Search>
+  );
+};
 
-export default Searchbar
+export default Searchbar;

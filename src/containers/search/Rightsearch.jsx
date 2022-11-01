@@ -1,5 +1,5 @@
 import { Rightcontainer, Wrapper } from "../home/right.style";
-import { Search, Input, RecentSearch, Blocks } from "./rightsearch.style";
+import { RecentSearch } from "./rightsearch.style";
 import Searchbar from "./Searchbar";
 import Browser from "./Browser";
 
@@ -12,7 +12,6 @@ const Rightsearch = () => {
         <Searchbar />
         <RecentSearch>
           <span className="hello" >
-            
           </span>
         </RecentSearch>
         <Browser />

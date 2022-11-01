@@ -122,4 +122,5 @@ export const Head2 = styled.h1`
     color: ${color.two};
     width: 100%;
     padding-left: 20px;
+    
 `
