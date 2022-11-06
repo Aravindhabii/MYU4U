@@ -5,6 +5,7 @@ import Search from "./components/search/Search";
 import Left from "./containers/left/Left";
 import Scan from "./components/scan/Scan";
 import { HomeContainer } from "./components/home/home.style";
+import Mplayer from "./containers/player/Mplayer";
 
 
 function App() {
@@ -18,9 +19,11 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/search" element={<Search />} />
                 <Route path="/scan" element={<Scan />} />
+                <Route path="/create" element={<Mplayer />} />
                 <Route path="*" element={<div>404</div>} />
           </Routes>
         </HomeContainer>
+          <Mplayer />
       </Router>
     </>
   );

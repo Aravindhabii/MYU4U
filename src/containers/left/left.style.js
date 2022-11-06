@@ -25,11 +25,7 @@ export const Logo = styled.div`
   font-weight: 900;
 `;
 
-
-
-export const Sidebarcont = styled.div.attrs({
-    className: 'sidebarcont'
-})`
+export const Sidebarcont = styled.div`
   position: relative;
   width: 100%;
   height: 30%;
@@ -100,10 +96,81 @@ export const Sidebarcont = styled.div.attrs({
   .content:hover{
     cursor: pointer;
   }
-  /* .content2:hover{
-    cursor: pointer;
-  } */
 `;
+
+export const Sidebarconttwo = styled.div`
+  position: relative;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+
+  .content {
+    position: relative;
+    width: 85%;
+    height: 20%;
+    background: ${color.one};
+    border-radius: 20px 0px 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:all 0.1s ease-in-out;
+    text-decoration: none;
+    color: ${color.two};
+  }
+  .content:before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 100%;
+    top: -18px;
+    background: transparent;
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    border-bottom-right-radius: 20px;
+    box-shadow: 7px 3px 0 0 ${color.one};
+    transition: all 0.1s ease-in-out;
+
+  }
+  .content:after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 100%;
+    bottom: -18px;
+    color: ${color.four};
+    background: transparent;
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    border-top-right-radius: 20px;
+    box-shadow: 7px -3px 0 0 ${color.one};
+    transition:all 0.1s ease-in-out;
+
+  }
+  .content2{
+    position: relative;
+    width: 85%;
+    height: 20%;
+    background: ${color.three};
+    color: ${color.two};
+    border-radius: 20px 0px 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:all 0.1s ease-in-out;
+    text-decoration: none;
+  }
+  .content:hover{
+    cursor: pointer;
+  }
+`;
+
 
 
 

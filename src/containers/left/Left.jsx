@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Container, Logo, Sidebarcont, Head1, Head2 } from "./left.style";
+import { Container, Logo, Sidebarcont,Sidebarconttwo, Head1, Head2 } from "./left.style";
 import { SearchOutlined, ScanOutlined, HomeOutlined } from "@ant-design/icons";
 import { useLocation, Link } from "react-router-dom";
 
@@ -118,7 +118,7 @@ const Left = () => {
           </Head1>
         </Link>
       </Sidebarcont>
-      <Sidebarcont className="sidebarcont" loc={currentroute}>
+      <Sidebarconttwo className="sidebarcont" loc={currentroute}>
         <Head2>Your Collection</Head2>
         <Link
             to='/favorite'
@@ -137,24 +137,7 @@ const Left = () => {
             Favorite Song
           </Head1>
         </Link>
-        <Link
-            to='/artist'
-          className={currentroute === "artist" ? "content" : "content2"}
-          onMouseLeave={
-            currentroute !== "artist" ? leavefunction : leavefunction
-          }
-          onMouseEnter={
-            currentroute !== "artist" ? enterfunction : leavefunction
-          }
-        >
-          <Head1>
-            <span className="icon">
-              <HomeOutlined />
-            </span>
-            Artist
-          </Head1>
-        </Link>
-      </Sidebarcont>
+      </Sidebarconttwo>
     </Container>
   );
 };
