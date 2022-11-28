@@ -5,7 +5,7 @@ import { useLocation, Link } from "react-router-dom";
 
 const Left = () => {
   let location = useLocation();
-  console.log(location.pathname);
+  console.log(location);
   const [currentroute, setroute] = useState("home");
   useEffect(() => {
     switch (location.pathname) {

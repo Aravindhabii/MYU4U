@@ -171,9 +171,6 @@ export const Sidebarconttwo = styled.div`
   }
 `;
 
-
-
-
 export const Head1 = styled.h1`
     font-size: ${font.two};
     font-family: 'Roboto', sans-serif;
@@ -191,3 +188,4 @@ export const Head2 = styled.h1`
     padding-left: 20px;
     
 `
+
