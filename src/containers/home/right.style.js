@@ -95,6 +95,10 @@ export const Head1 = styled.h1`
   font-size: ${font.three};
   font-family: "Roboto", sans-serif;
   color: ${color.two};
+  /* width: 100px;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; */
 `;
 
 export const Head2 = styled.h1`
@@ -268,11 +272,11 @@ export const DiscoverCard = styled.div`
     font-size: ${font.five};
     color: ${color.one};
     margin-top: 1rem;
-    background: green;
+    background: ${color.three};
     border-radius: 50%;
   }
   path:nth-child(1){
-    background: ${color.three};
+    background: ${color.two};
     color: green;
     overflow: hidden;
   }

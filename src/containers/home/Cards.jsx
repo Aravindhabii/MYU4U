@@ -3,19 +3,20 @@ import { Cardcontainer, Card, Head3 } from "./right.style";
 import image from "../../assets/image3.jpg";
 import { cardcontent } from "../../assets/resource/contents";
 
-const Cards = (props) => {
+const Cards = ({data,title}) => {
   const content = [];
+
   return (
     <Cardcontainer>
       <Head3>
-        {props.title}
+        {title}
       </Head3>
       <div className="bottom">
-        {cardcontent.map((cont) => {
+        {data.slice(8,14).map((cont) => {
           return (
             <Card>
-              <img src={cont.pic} alt="img" />
-              <p>{cont.name}</p>
+              <img src={cont.imglink} alt="img" />
+              <p>{cont.title}</p>
             </Card>
           );
         })}

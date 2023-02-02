@@ -9,13 +9,13 @@ import { happyhits } from "../../axios/songs.axios";
 const Home = () => {
 
   const [data, setData] = useState(null);
-
-
+  const [randno, setrandno] = useState(0)
 
   useEffect(() => {
     const fetchdata = async ()=>{
       await happyhits().then((res)=>{
         setData(res.data)
+        setrandno(Math.floor(Math.random() * res.data.length))
         console.log(res.data);
       }).catch((err)=>{
         console.log(err);
@@ -23,16 +23,16 @@ const Home = () => {
     }
     fetchdata();
   }, []);
-  
 
-  
+
+  if (!data) return <div>Loading...</div>;
   return (
     <Rightcontainer>
       <Wrapper>
         <Head />
-        <Poster />
-        <Cards title="Good Morning" />
-        <Discover title = "Trending"/>
+        <Poster data = {data} randno = {randno}/>
+        <Cards data = {data} title="Good Morning" />
+        <Discover data = {data} title = "Trending"/>
       </Wrapper>
     </Rightcontainer>
   );

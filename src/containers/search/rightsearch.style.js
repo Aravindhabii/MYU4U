@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import { color, font, random } from "../../utilities";
 
-
-
 export const Search = styled.div`
   position: relative;
   margin-top: 5%;
@@ -62,17 +60,76 @@ export const Blocks = styled.button`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  height: 3rem;
+  height: 4rem;
   padding: 0 12%;
   background: ${color.three};
   color: ${color.two};
   font-family: "Oxygen", sans-serif;
   /* margin-bottom: 1px; */
-  &:hover{
+  &:hover {
     background: ${color.four};
     cursor: pointer;
   }
+`;
 
+export const SearchResult = styled.div`
+  position: relative;
+  width: 100%;
+  height: 20rem;
+  margin-top: 4%;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: flex-start;
+  background: #000;
+  .left {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+  }
+  .right {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+  }
+`;
+
+export const TopResult = styled.div`
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  img {
+    position: relative;
+    height: 40%;
+    width: 40%;
+    top: 5%;
+    left: 5%;
+    border-radius: 20px;
+  }
+  h1 {
+    position: relative;
+    font-size: ${font.two};
+    width: 90%;
+    color: ${color.two};
+    font-family: "Oxygen", sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis ellipsis;
+    left: 5%;
+
+  }
+  h2 {
+    position: relative;
+    font-size: ${font.two};
+    color: ${color.two};
+    font-family: "Oxygen", sans-serif;
+    left: 5%;
+
+  }
 `;
 
 export const RecentSearch = styled.div``;
@@ -103,12 +160,12 @@ export const Browsercard = styled.div`
   height: 25vh;
   border-radius: 20px;
   align-self: center;
-  background: ${props => props.color || "palevioletred"};
+  background: ${(props) => props.color || "palevioletred"};
   justify-self: center;
   display: flex;
   padding: 10% 0 0 5%;
 
-  img{
+  img {
     width: 50%;
     height: 50%;
     position: absolute;
