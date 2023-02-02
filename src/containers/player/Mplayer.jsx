@@ -13,10 +13,9 @@ const Mplayer = () => {
     <Mcontainer>
       {/* <ReactAudioPlayer className="audioplayer" src="https://res.cloudinary.com/deak6nhde/video/upload/v1667737729/Music/Test/01_Bad_Life_-_acoustic.m4a"  controls onError={errfun}/> */}
       <AudioPlayer
-        autoPlay
-        src="https://res.cloudinary.com/deak6nhde/video/upload/v1667737729/Music/Test/01_Bad_Life_-_acoustic.m4a"
+        
+        src="http://res.cloudinary.com/deak6nhde/video/upload/v1675230068/music/8ebdd676ab7fc2235e2ab885795d8eb2.m4a"
         onPlay={(e) => console.log("onPlay")}
-        // other props here
       />
     </Mcontainer>
   );

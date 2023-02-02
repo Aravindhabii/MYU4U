@@ -3,13 +3,14 @@ import { RecentSearch } from "./rightsearch.style";
 import Searchbar from "./Searchbar";
 import Browser from "./Browser";
 
-const Rightsearch = () => {
+
+const Rightsearch = (props) => {
   
 
   return (
     <Rightcontainer>
       <Wrapper>
-        <Searchbar />
+        <Searchbar Adata = {props.Adata}/>
         <RecentSearch>
           <span className="hello" >
           </span>

@@ -56,18 +56,23 @@ export const Input = styled.input`
   font-family: "Oxygen", sans-serif;
 `;
 
-export const Blocks = styled.div`
+export const Blocks = styled.button`
   position: relative;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  height: 2rem;
+  height: 3rem;
   padding: 0 12%;
   background: ${color.three};
   color: ${color.two};
   font-family: "Oxygen", sans-serif;
   /* margin-bottom: 1px; */
+  &:hover{
+    background: ${color.four};
+    cursor: pointer;
+  }
+
 `;
 
 export const RecentSearch = styled.div``;
@@ -110,5 +115,4 @@ export const Browsercard = styled.div`
     bottom: 5%;
     right: 5%;
   }
-
 `;

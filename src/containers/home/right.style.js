@@ -199,7 +199,7 @@ export const Card = styled.div`
     overflow: hidden;
     -webkit-box-shadow: 16px 17px 12px -9px rgb(0 0 0 / 55%);
 -moz-box-shadow:  16px 17px 12px -9px rgb(0 0 0 / 55%);
-box-shadow:  16px 17px 12px -9px rgb(0 0 0 / 55%);
+box-shadow: 17px 13px 15px -11px rgb(255 255 255 / 10%);
     p{
 
     }
